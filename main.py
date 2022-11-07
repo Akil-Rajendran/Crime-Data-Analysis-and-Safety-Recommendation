@@ -1,9 +1,9 @@
 import streamlit as st
 import pandas as pd
-import plotly.express as px
+from plotly import express as px
 import numpy as np
-import plotly.graph_objects as go
-import matplotlib.pyplot as plt
+from plotly import graph_objects as go
+from matplotlib import pyplot as plt
 import requests
 from geopy.geocoders import Nominatim 
 
