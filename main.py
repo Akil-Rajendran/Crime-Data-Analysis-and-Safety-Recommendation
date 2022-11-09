@@ -48,15 +48,14 @@ with locationInfo:
     st.markdown("""<hr style="height:5px;border:none;color:#000000;background-color:#FFFFFF;" /> """, unsafe_allow_html=True)
     by_place = pd.read_csv(r'by_place.csv', index_col=[0])
     dist_wise = pd.read_csv(r'dist_wise.csv', index_col=[0])
-    # state_group = pd.read_csv(r'state_group.csv', index_col=[0])
     d = pd.read_csv(r'clustered.csv', index_col=[0])
 
     # try: 
-    city = get_location()[0]
-    state = get_location()[1]
+    # city = get_location()[0]
+    # state = get_location()[1]
     # except:
-    #     state = st.sidebar.selectbox('STATE', d['STATE'].unique())
-    #     city = st.sidebar.selectbox('CITY', d[(d['STATE'] == state)]['DISTRICT'])
+    state = st.sidebar.selectbox('STATE', d['STATE'].unique())
+    city = st.sidebar.selectbox('CITY', d[(d['STATE'] == state)]['DISTRICT'])
     
     st.markdown(f'<p style = "font-family: Verdana; text-align: center">You are currently in </p><p style="font-family: Verdana; font-size: 24px;text-align: center"><b>{city}, {state}</b></p>', unsafe_allow_html=True)
     latlong = {'lat':[get_latlong(city)[0]], 'lon':[get_latlong(city)[1]]}
