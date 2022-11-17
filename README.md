@@ -11,4 +11,4 @@ Problem Statement
 - With the current advancement in Data Science and transparency of crime data from the Govt. of India, it is easier than ever to generate analytics and safety recommendations for the citizens. 
 - Hence, this project provides a solution in terms of a web application using which the user location is extracted to analyse and educate him/her based on the crime history of the place.
 
-You can access the webpage designed using [this link] (https://akil-rajendran-crime-data-analysis-and-safety-recom-main-6124th.streamlit.app/)
+You can access the webpage designed using [this link](https://akil-rajendran-crime-data-analysis-and-safety-recom-main-6124th.streamlit.app/)
